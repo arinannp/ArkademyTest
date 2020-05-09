@@ -1,0 +1,16 @@
+create database caffeArkademy
+go
+
+use caffeArkademy
+go
+
+create table pesanan (
+	id bigint NOT NULL auto_increment,
+	cashier varchar(200) NOT NULL,
+	product varchar(200) NOT NULL,
+	category varchar(100) NOT NULL,
+	price varchar(200) NOT NULL,
+	Primary Key (id));
+
+insert into pesanan (cashier, product, category, price) 
+	VALUES ('Pevita Pearce','Latte','Drink','10.000'),('Raisa Andriana','Cake','Food','20.000'),('Arinan Najah Putra','Pizza','Food','45.000');
